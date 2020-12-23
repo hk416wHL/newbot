@@ -33,7 +33,7 @@ client.on("message", (message) => {
   }
 
   if(message.content == '!팔로워') {
-    return message.reply('현재 팔로워858명 (일주일에 한 번씩업데이트)');
+    return message.reply('현재 팔로워891명 (일주일에 한 번씩업데이트)');
   }
 
   if(message.content == '!방울겜정보') {
@@ -142,7 +142,7 @@ if(message.content == '레식') {
       .setURL("https://www.twitch.tv/bang_ul_2")
       .setAuthor("금방울", img, "https://www.twitch.tv/bang_ul_2")
       .setThumbnail(img)
-      .addField("현재팔로워", "858명")
+      .addField("현재팔로워", "891명")
       .addField("디스코드서버", "https://discord.gg/UzcrbzNqvb", true)
       .addField("방울샵링크", "https://marpple.shop/kr/bang_ul", true)
       .addField("트윕", "https://twip.kr/bang_ul_2", true)
