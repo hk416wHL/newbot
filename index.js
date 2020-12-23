@@ -107,6 +107,32 @@ if(message.content == '레식') {
     message.channel.send(embed)
   }
 
+  if (message.content == "!악질유저") {
+    let img = "https://cdn.discordapp.com/attachments/756326812841279572/790565372632760330/38e2f8f8445ec57636e6f2133228ee5d32d5aa316f3afc85afa8e4ae8c24f63d9d3b2a60945a776682941e178cad6a8f64dc.png"
+    let embed = new Discord.MessageEmbed()
+    embed.setColor("#FF8E8E")
+    .setTitle("악질유저목록")
+    .setAuthor("배틀아이", img, "https://namu.wiki/w/%EB%B0%B0%ED%8B%80%EC%95%84%EC%9D%B4")
+    .setThumbnail(img)
+    .addField("유저이름", "coin0113")
+    .addField("이유", "욕설(패드립 그외 기타등등),팀킬")
+    .addField("그외 악질 유저 제보는 개발자에게 알려주세요", "나쁜짓은 하지마")
+    .setFooter("제작자:HK416.KOR", img)
+    message.channel.send(embed)
+  }
+
+  if (message.content == "!악질유저기준") {
+    let img = "https://cdn.discordapp.com/attachments/756326812841279572/790565372632760330/38e2f8f8445ec57636e6f2133228ee5d32d5aa316f3afc85afa8e4ae8c24f63d9d3b2a60945a776682941e178cad6a8f64dc.png"
+    let embed = new Discord.MessageEmbed()
+    embed.setColor("#FF8E8E")
+    .setTitle("악질유저 기준")
+    .setAuthor("배틀아이", img, "https://namu.wiki/w/%EB%B0%B0%ED%8B%80%EC%95%84%EC%9D%B4")
+    .setThumbnail(img)
+    .addField('악질유저 분류기준', '고의적트롤,고의적팀킬,욕설(패드립 포함) 그외 지나치게 게임진행 방해')
+    .addField('한번 박제가 되면', '1년에서많게는 3년동안 박제됩니다. 그리고 기록도 남게되며 개발자도 못지움(')
+    .addField('박제과정', '1단계 검토 해당 유저가 악질유저 라고 제보가 왔다면 진짜 악질유저인지 악질유저 분류 기준 중에 한개 이상해당될경우 박제 과정이 진행된다\n2단계 박제 그 다음 박제를 한다(닉네임,행동내용)을 박제한다')
+  }
+
   if (message.content == "!방울정보") {
     let img = "https://cdn.discordapp.com/attachments/756326812841279572/779522847163809802/b5a1c775-fc02-49d5-8eb4-ce1566bd23fb-profile_image-70x70.png"
     let embed = new Discord.MessageEmbed()
@@ -193,6 +219,7 @@ if(message.content == '레식') {
       { name: "!버전", desc: "현재 버전을 알려줘요^^"},
       { name: "!팔로워", desc: "현재 팔로워수 를 보여줘요^^"},
       { name: "!방울봇소식", desc: "방울봇 관련 업데이트및사건사고를 알려줍니다."},
+      { name: "!악질유저", desc: "악질 레식 유저 닉네임을 알려드려요"},
     ]
     let commandStr = ""
     let embed = new Discord.MessageEmbed().setAuthor("방울BOT", helpImg).setColor("#0BB8F7").setFooter(`방울BOT ❤️`).setTimestamp()
