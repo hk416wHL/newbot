@@ -17,6 +17,10 @@ client.on("guildMemberAdd", (member) => {
   member.roles.add(guild.roles.cache.find((r) => r.name === roleName).id)
 })
 
+client.on('message', (message) => {
+  if(checkContinuousChatting(bot, message)) return;
+});
+
 client.on("guildMemberRemove", (member) => {
   const guild = member.guild
   const deleteUser = member.user
@@ -146,7 +150,7 @@ if(message.content == '레식') {
       .addField("디스코드서버", "https://discord.gg/UzcrbzNqvb", true)
       .addField("방울샵링크", "https://marpple.shop/kr/bang_ul", true)
       .addField("트윕", "https://twip.kr/bang_ul_2", true)
-      .addField("대회경력제1회 바유배 레인보우식스 시즈 스트리머대회 3위", "여고생쟝 레식한데!/언팔할꺼면 팔로우 no.\n")
+      .addField("대회경력제1회 바유배 레인보우식스 시즈 스트리머대회 3위", "따끈따끈한 성인/언팔할꺼면 팔로우 no.\n")
       .setTimestamp()
       .setFooter("화이트해커만듬", img)
 
